@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(206, 248, 248);
+    background-color: rgb(222, 240, 240);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 h1 {
@@ -9,7 +9,7 @@ h1 {
 .text-body {
     display: flex;
     justify-content: space-evenly;
-    margin: 50px 100px 10px 100px;
+    margin: 4vh 12vw 1vh 12vw;
    
 }
 
@@ -27,11 +27,11 @@ h1 {
     flex-direction: column;
     text-align: center;
 }
-.clear-box {
-    width: 80px;
-    height:80px;
-   position: fixed;
-    right:5vw;
+.resetButton {
+    width: 100px;
+    height:100px;
+    position: relative;
+    left: 23.5vw;
 
     &:hover {
         cursor:pointer;

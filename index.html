@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morse Code Translator</title>
     <link rel = "stylesheet" href = "style.css">
-    <script defer src = "script.js"></script>
+    <script defer src = "script.js" type = "module"></script>
 </head>
 <body>
     <h1>Morse Code Translator</h1>
@@ -24,12 +24,12 @@
 
 </div>
 </form>
-<img class = clear-box src = "assets/images/reset2.png">
+<btn class = resetButton id = "resetButton" ><img class = resetButton src = "assets/images/reset2.png"></btn>
 
     <section class = "text-body">
         <div class = morse-to-text>
             <h2>Enter your Morse Code here... </h2>
-            <textarea class = "input-box" id = "morse-enter" cols ="50" rows="10" placeholder="Type here..."></textarea>
+            <textarea class = "input-box" id = "morse-enter" cols ="50" rows="10" placeholder="Make sure to use a space between each letter of your morse code..."></textarea>
         </div>
         <h2 class = "arrow-box">Click the arrow... <img id = "arrow2" class = "arrow" src = "assets/images/arrow.png"></h2>
         <div class = "morse-to-text">
