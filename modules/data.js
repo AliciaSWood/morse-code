@@ -36,3 +36,5 @@ export const morseCode = {
     "9": "----.",
     "0": "-----",
     }
+
+    export const alphabetCode = Object.fromEntries(Object.entries(morseCode).map(([key, value]) => [value, key]));
