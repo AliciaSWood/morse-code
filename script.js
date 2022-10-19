@@ -1,12 +1,12 @@
 import * as data from "./modules/data.js";
 import * as module from "./modules/functions.js";
 
-// Variables
+// Variables/Selectors
 // Arrow Buttons
 const arrow1 = document.getElementById("arrow1");
 const arrow2 = document.getElementById("arrow2");
 
-//Translate to Text
+//Translate to Text 
 const inputMorse = document.getElementById("morse-enter");
 const getText = document.getElementById("text-exit");
 
@@ -36,3 +36,9 @@ let ouputFields = document.querySelectorAll(".out-box")
 resetButton.addEventListener("click", () => {
    module.resetFields(inputFields, ouputFields)
 })
+
+// document.addEventListener('keydown', (event) => {
+//    if(event.key == "Enter") {
+//       getMorse.innerText.concat("\n") 
+//    }
+// })

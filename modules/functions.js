@@ -1,3 +1,5 @@
+
+// Logic Functions
 export const toEnglishTranslator = (str, code) => {
     return str.split(" ").map(element => {
        return code[element] ? code[element] : element;
@@ -10,6 +12,7 @@ export const toEnglishTranslator = (str, code) => {
     }).join("");
  }
 
+ // DOM Functions
  export const resetFields = (input, output) => {
     input.forEach(input => input.value = "")
     output.forEach(input => input.innerText = "")

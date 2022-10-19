@@ -36,12 +36,17 @@ h1 {
   justify-content: space-evenly;
   margin: 3vh 12vw 0vh 12vw;
 }
+@media only screen and (max-width: 1394px) {
+  .text-body {
+    font-size: 12px;
+  }
+}
 
 .arrow {
   width: 300px;
   margin-top: 50px;
 }
-@media only screen and (max-width: 1355px) {
+@media only screen and (max-width: 1394px) {
   .arrow {
     width: 200px;
   }
@@ -61,8 +66,10 @@ h1 {
 .resetButton {
   width: 100px;
   height: 100px;
-  position: relative;
-  left: 23.5vw;
+  margin-top: -50px;
+  margin-left: -50px;
+  position: fixed;
+  left: 50%;
 }
 .resetButton:hover {
   cursor: pointer;
@@ -73,12 +80,28 @@ h1 {
   font-size: 18px;
   margin-bottom: 30px;
   border-radius: 10px;
+  height: 12em;
+  width: 30em;
+}
+@media only screen and (max-width: 1394px) {
+  .input-box {
+    height: 10em;
+    width: 20em;
+  }
 }
 
 .out-box {
   font-size: 18px;
   margin-bottom: 30px;
   border-radius: 10px;
+  height: 12em;
+  width: 30em;
+}
+@media only screen and (max-width: 1394px) {
+  .out-box {
+    height: 10em;
+    width: 20em;
+  }
 }
 
 #arrow1 {

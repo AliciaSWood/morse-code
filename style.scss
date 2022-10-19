@@ -1,3 +1,7 @@
+//Media Query:
+$md:1394px;
+
+
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin:0;
@@ -26,10 +30,6 @@ body {
     }    
 }
 
-
-
-
-
 h1 {
     padding-top: 20px;
     text-align: center;
@@ -40,6 +40,9 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     margin: 3vh 12vw 0vh 12vw;
+    @media only screen and (max-width:$md) { 
+        font-size: 12px;
+    }
    
 }
 
@@ -47,7 +50,7 @@ h1 {
     width: 300px;
     margin-top: 50px;
 
-    @media only screen and (max-width:1355px) { 
+    @media only screen and (max-width:$md) { 
         width: 200px;
         
     }
@@ -57,6 +60,7 @@ h1 {
         opacity: 0.5;
         transform: rotate(5deg);
     }
+
 }
 .arrow-box {
     display: flex;
@@ -66,8 +70,11 @@ h1 {
 .resetButton {
     width: 100px;
     height:100px;
-    position: relative;
-    left: 23.5vw;
+    margin-top: -50px;
+    margin-left: -50px;
+    position: fixed;
+    left: 50%;
+  
 
     &:hover {
         cursor:pointer;
@@ -75,18 +82,33 @@ h1 {
     }
 }
 
-.input-box {
+@mixin inner-textbox-styling {
     font-size: 18px;
     margin-bottom: 30px;
     border-radius: 10px;
+    height: 12em;
+    width: 30em;
+
+}
+.input-box {
+@include inner-textbox-styling();
+
+@media only screen and (max-width:$md) { 
+    height: 10em;
+    width: 20em;
+}
 }
 
 .out-box {
-    font-size: 18px;
-    margin-bottom: 30px;
-    border-radius: 10px;
+@include inner-textbox-styling();
+
+@media only screen and (max-width:$md) { 
+    height: 10em;
+    width: 20em;
+}
 }
 
 #arrow1 {
     visibility: hidden;
 }
+
