@@ -13,6 +13,11 @@ body {
   background-size: 400% 400%;
   animation: alter 10s ease-in-out infinite;
 }
+@media only screen and (max-width: 970px) {
+  .gradientBackground {
+    height: 150vh;
+  }
+}
 
 @keyframes alter {
   0% {
@@ -36,9 +41,16 @@ h1 {
   justify-content: space-evenly;
   margin: 3vh 12vw 0vh 12vw;
 }
-@media only screen and (max-width: 1394px) {
+@media only screen and (max-width: 1420px) {
   .text-body {
     font-size: 12px;
+  }
+}
+@media only screen and (max-width: 970px) {
+  .text-body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -46,7 +58,7 @@ h1 {
   width: 300px;
   margin-top: 50px;
 }
-@media only screen and (max-width: 1394px) {
+@media only screen and (max-width: 1420px) {
   .arrow {
     width: 200px;
   }
@@ -71,6 +83,17 @@ h1 {
   position: fixed;
   left: 50%;
 }
+@media only screen and (max-width: 970px) {
+  .resetButton {
+    position: relative;
+    margin-right: 500px;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    left: 0;
+    margin-left: 18vw;
+  }
+}
 .resetButton:hover {
   cursor: pointer;
   opacity: 0.5;
@@ -83,7 +106,7 @@ h1 {
   height: 12em;
   width: 30em;
 }
-@media only screen and (max-width: 1394px) {
+@media only screen and (max-width: 1420px) {
   .input-box {
     height: 10em;
     width: 20em;
@@ -96,8 +119,10 @@ h1 {
   border-radius: 10px;
   height: 12em;
   width: 30em;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.733);
 }
-@media only screen and (max-width: 1394px) {
+@media only screen and (max-width: 1420px) {
   .out-box {
     height: 10em;
     width: 20em;
@@ -106,4 +131,11 @@ h1 {
 
 #arrow1 {
   visibility: hidden;
+}
+@media only screen and (max-width: 970px) {
+  #arrow1 {
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
 }

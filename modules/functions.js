@@ -9,7 +9,7 @@ export const toEnglishTranslator = (str, code) => {
  export const morseCodeTranslator = (str, code) => {
     return str.toUpperCase().split("").map(element => {
        return code[element] ? code[element] : element;
-    }).join("");
+    }).join(" ");
  }
 
  // DOM Functions

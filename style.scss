@@ -1,5 +1,5 @@
 //Media Query:
-$md:1394px;
+$md:1420px;
 
 
 body {
@@ -16,6 +16,10 @@ body {
     position: relative;
     background-size: 400% 400%;
     animation: alter 10s ease-in-out infinite;
+
+    @media only screen and (max-width:970px) { 
+        height: 150vh;   
+    }
 }
 
 @keyframes alter {
@@ -42,6 +46,12 @@ h1 {
     margin: 3vh 12vw 0vh 12vw;
     @media only screen and (max-width:$md) { 
         font-size: 12px;
+    }
+    @media only screen and (max-width:970px) { 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
     }
    
 }
@@ -74,6 +84,18 @@ h1 {
     margin-left: -50px;
     position: fixed;
     left: 50%;
+
+    @media only screen and (max-width:970px) { 
+       position: relative;
+       margin-right: 500px;
+       width: 100px;
+       height: 100px;
+       margin:0;
+       left: 0;
+       margin-left: 18vw;
+       
+        
+    }
   
 
     &:hover {
@@ -101,6 +123,9 @@ h1 {
 
 .out-box {
 @include inner-textbox-styling();
+opacity: 1;
+background-color: rgba(255, 255, 255, 0.733);
+
 
 @media only screen and (max-width:$md) { 
     height: 10em;
@@ -108,7 +133,17 @@ h1 {
 }
 }
 
+
+
+
 #arrow1 {
     visibility: hidden;
+    @media only screen and (max-width:970px) { 
+        margin:0;
+        padding: 0;
+        display: none;
+        
+    }
 }
+
 
