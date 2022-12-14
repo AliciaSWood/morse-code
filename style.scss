@@ -1,149 +1,134 @@
 //Media Query:
-$md:1420px;
-
+$md: 1420px;
 
 body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin:0;
-    padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .gradientBackground {
-    width: 100%;
-    height:100vh;
-    color: #fff;
-    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-    position: relative;
-    background-size: 400% 400%;
-    animation: alter 10s ease-in-out infinite;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  position: relative;
+  background-size: 400% 400%;
+  animation: alter 10s ease-in-out infinite;
 
-    @media only screen and (max-width:970px) { 
-        height: 150vh;   
-    }
+  @media only screen and (max-width: 970px) {
+    height: 150vh;
+  }
 }
 
 @keyframes alter {
-    0% {
-        background-position: 0 50%;
-    };
-    50% {
-        background-position: 100% 50%;
-    };
-    100% {
-        background-position: 0 50%;
-    }    
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 h1 {
-    padding-top: 20px;
-    text-align: center;
-    margin:0;
-    // margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+  margin: 0;
+  // margin-top: 40px;
 }
 .text-body {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 3vh 12vw 0vh 12vw;
-    @media only screen and (max-width:$md) { 
-        font-size: 12px;
-    }
-    @media only screen and (max-width:970px) { 
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        
-    }
-   
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3vh 12vw 0vh 12vw;
+  @media only screen and (max-width: $md) {
+    font-size: 12px;
+  }
+  @media only screen and (max-width: 970px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .arrow {
-    width: 300px;
-    margin-top: 50px;
+  width: 300px;
+  margin-top: 50px;
 
-    @media only screen and (max-width:$md) { 
-        width: 200px;
-        
-    }
+  @media only screen and (max-width: $md) {
+    width: 200px;
+  }
 
-    &:hover {
-        cursor: pointer;
-        opacity: 0.5;
-        transform: rotate(5deg);
-    }
-
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transform: rotate(5deg);
+  }
 }
 .arrow-box {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .resetButton {
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  position: fixed;
+  left: 50%;
+
+  @media only screen and (max-width: 970px) {
+    position: relative;
+    margin-right: 500px;
     width: 100px;
-    height:100px;
-    margin-top: -50px;
-    margin-left: -50px;
-    position: fixed;
-    left: 50%;
+    height: 100px;
+    margin: 0;
+    left: 0;
+    margin-left: 18vw;
+  }
 
-    @media only screen and (max-width:970px) { 
-       position: relative;
-       margin-right: 500px;
-       width: 100px;
-       height: 100px;
-       margin:0;
-       left: 0;
-       margin-left: 18vw;
-       
-        
-    }
-  
-
-    &:hover {
-        cursor:pointer;
-        opacity: 0.5;
-    }
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
 }
 
 @mixin inner-textbox-styling {
-    font-size: 18px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    height: 12em;
-    width: 30em;
-
+  font-size: 18px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  height: 12em;
+  width: 30em;
 }
 .input-box {
-@include inner-textbox-styling();
+  @include inner-textbox-styling();
 
-@media only screen and (max-width:$md) { 
+  @media only screen and (max-width: $md) {
     height: 10em;
     width: 20em;
-}
+  }
 }
 
 .out-box {
-@include inner-textbox-styling();
-opacity: 1;
-background-color: rgba(255, 255, 255, 0.733);
+  @include inner-textbox-styling();
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.733);
 
-
-@media only screen and (max-width:$md) { 
+  @media only screen and (max-width: $md) {
     height: 10em;
     width: 20em;
+  }
 }
-}
-
-
-
 
 #arrow1 {
-    visibility: hidden;
-    @media only screen and (max-width:970px) { 
-        margin:0;
-        padding: 0;
-        display: none;
-        
-    }
+  visibility: hidden;
+  @media only screen and (max-width: 970px) {
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
 }
-
-
